@@ -258,17 +258,17 @@
 					that._globalHeight = this._display.height();
 					that._debtElement = $('#debt');
 					
-					this._display.on('mouseleave', function () {
-						that._pauseEurosLoop();
-						paused = true;
-					});
+					// this._display.on('mouseleave', function () {
+					// 	that._pauseEurosLoop();
+					// 	paused = true;
+					// });
 					
-					this._display.on('mouseenter', function () {
-						if (!that._gameOver && paused) {
-							that._initEurosLoop();
-							paused = false;
-						}
-					})
+					// this._display.on('mouseenter', function () {
+					// 	if (!that._gameOver && paused) {
+					// 		that._initEurosLoop();
+					// 		paused = false;
+					// 	}
+					// });
 				},
 				_initMouseMove: function () {
 					var that = this,
